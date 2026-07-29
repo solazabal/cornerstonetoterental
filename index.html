@@ -12,115 +12,201 @@
 
 <style>
 
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+
 body {
 
-    margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 
-    font-family: Arial, Helvetica, sans-serif;
+  color: #222;
 
-    color: #222;
-
-    line-height: 1.6;
+  line-height: 1.6;
 
 }
 
 header {
 
-    background: #111;
+  position: sticky;
 
-    color: white;
+  top: 0;
 
-    padding: 60px 20px;
+  z-index: 1000;
 
-    text-align: center;
+  background: #111;
+
+  color: white;
+
+  padding: 18px 6%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
 
 }
 
-header h1 {
+.logo {
 
-    font-size: 42px;
+  font-size: 24px;
 
-    margin-bottom: 10px;
+  font-weight: bold;
 
 }
 
-header p {
+.logo small {
 
-    font-size: 20px;
+  display: block;
+
+  font-size: 13px;
+
+  font-weight: normal;
+
+  letter-spacing: 1px;
+
+}
+
+nav {
+
+  display: flex;
+
+  gap: 20px;
+
+  align-items: center;
+
+}
+
+nav a {
+
+  color: white;
+
+  text-decoration: none;
 
 }
 
 .button {
 
-    display: inline-block;
+  background: white;
 
-    background: #f5c400;
+  color: #111;
 
-    color: #111;
+  padding: 12px 22px;
 
-    padding: 14px 28px;
+  border-radius: 4px;
 
-    margin-top: 20px;
+  font-weight: bold;
 
-    text-decoration: none;
+}
 
-    border-radius: 6px;
+.hero {
 
-    font-weight: bold;
+  min-height: 85vh;
+
+  background:
+
+  linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+
+  url("https://images.unsplash.com/photo-1556740749-887f6717d7e4")
+
+  center/cover;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 0 7%;
+
+  color: white;
+
+}
+
+.hero-content {
+
+  max-width: 650px;
+
+}
+
+.hero h1 {
+
+  font-size: 58px;
+
+  line-height: 1.1;
+
+  margin-bottom: 20px;
+
+}
+
+.hero p {
+
+  font-size: 20px;
+
+  margin-bottom: 30px;
+
+}
+
+.hero .button {
+
+  display: inline-block;
 
 }
 
 section {
 
-    padding: 45px 20px;
-
-    max-width: 900px;
-
-    margin: auto;
+  padding: 70px 7%;
 
 }
 
-h2 {
+.section-title {
 
-    text-align: center;
+  text-align: center;
 
-    font-size: 32px;
+  margin-bottom: 40px;
+
+}
+
+.section-title h2 {
+
+  font-size: 36px;
 
 }
 
 .cards {
 
-    display: flex;
+  display: flex;
 
-    gap: 20px;
+  gap: 30px;
 
-    flex-wrap: wrap;
+  justify-content: center;
 
 }
 
 .card {
 
-    flex: 1;
+  flex: 1;
 
-    min-width: 220px;
+  padding: 30px;
 
-    padding: 20px;
+  border: 1px solid #ddd;
 
-    border-radius: 8px;
+  text-align: center;
 
-    background: #f4f4f4;
+  border-radius: 8px;
 
 }
 
-footer {
+.icon {
 
-    background: #111;
+  font-size: 40px;
 
-    color: white;
-
-    text-align: center;
-
-    padding: 25px;
+  margin-bottom: 15px;
 
 }
 
@@ -132,77 +218,99 @@ footer {
 
 <header>
 
-<h1>Cornerstone Tote Rental</h1>
+<div class="logo">
+
+Cornerstone
+
+<small>Tote Rental</small>
+
+</div>
+
+<nav>
+
+<a href="#">Home</a>
+
+<a href="#how">How It Works</a>
+
+<a href="#pricing">Pricing</a>
+
+<a href="#contact">Contact</a>
+
+<a class="button" href="#">Book Now</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>
+
+Move Smarter.<br>
+
+Not Harder.
+
+</h1>
 
 <p>
 
-Move Smarter. Not Harder.
-
-</p>
-
-<p>
-
-Reusable moving totes delivered to your door and picked up when you're finished.
+Reusable moving totes delivered to your door and picked up when you’re finished.
 
 Serving Westchester County, NY.
 
 </p>
 
-<a class="button" href="#contact">Get a Quote</a>
+<a class="button" href="#">
 
-</header>
+Book Now
 
-<section>
+</a>
 
-<h2>A Better Way To Move</h2>
-
-<p>
-
-Skip the cardboard boxes, tape, and mess. Cornerstone Tote Rental provides clean, durable, reusable moving totes that make your move easier, faster, and more organized.
-
-</p>
+</div>
 
 </section>
 
-<section>
+<section id="how">
+
+<div class="section-title">
 
 <h2>How It Works</h2>
+
+<p>Moving doesn’t have to be complicated. We make it simple.</p>
+
+</div>
 
 <div class="cards">
 
 <div class="card">
 
-<h3>1. Reserve</h3>
+<div class="icon">🧺</div>
 
-<p>
+<h3>Choose Your Totes</h3>
 
-Choose the number of totes you need and schedule your delivery.
-
-</p>
+<p>Select the package that fits your move.</p>
 
 </div>
 
 <div class="card">
 
-<h3>2. We Deliver</h3>
+<div class="icon">🚚</div>
 
-<p>
+<h3>We Deliver</h3>
 
-We bring clean reusable totes directly to your home.
-
-</p>
+<p>We bring clean reusable totes right to your door.</p>
 
 </div>
 
 <div class="card">
 
-<h3>3. We Pick Up</h3>
+<div class="icon">↩️</div>
 
-<p>
+<h3>We Pick Them Up</h3>
 
-When you're finished unpacking, we'll come pick them up.
-
-</p>
+<p>When your move is complete, we pick them up.</p>
 
 </div>
 
@@ -211,72 +319,264 @@ When you're finished unpacking, we'll come pick them up.
 </section>
 
 <section>
+
+<div class="section-title">
 
 <h2>Why Choose Cornerstone?</h2>
 
+<p>A cleaner, easier, and more convenient way to move.</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<div class="icon">💪</div>
+
+<h3>Durable & Reusable</h3>
+
+<p>
+
+Strong, stackable totes designed to make moving easier.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">🚚</div>
+
+<h3>Delivered & Picked Up</h3>
+
+<p>
+
+We bring the totes to you and pick them up when you’re finished.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">♻️</div>
+
+<h3>Cleaner Than Cardboard</h3>
+
+<p>
+
+No tape, no broken boxes, and less waste after your move.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="pricing">
+
+<div class="section-title">
+
+<h2>Choose Your Moving Package</h2>
+
+<p>
+
+Every rental includes delivery, pickup, and clean reusable totes ready to use.
+
+</p>
+
+<h3>14-Day Rental Included</h3>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Starter</h3>
+
+<p>Studio / 1 Bedroom</p>
+
+<h2>$99</h2>
+
 <ul>
 
-<li>No tape required</li>
+<li>20 reusable totes</li>
 
-<li>Strong, stackable moving totes</li>
+<li>1 tote dolly</li>
 
-<li>Weather resistant</li>
+<li>Free delivery</li>
 
-<li>Cleaner than cardboard boxes</li>
+<li>Free pickup</li>
 
-<li>Eco-friendly and reusable</li>
+<li>Clean and ready to use</li>
 
-<li>Delivered and picked up for you</li>
+<li>Extensions available</li>
 
 </ul>
+
+<br>
+
+<a class="button" href="#">Book Now</a>
+
+</div>
+
+<div class="card">
+
+<h3>⭐ Most Popular</h3>
+
+<h2>Standard</h2>
+
+<p>2–3 Bedrooms</p>
+
+<h2>$169</h2>
+
+<ul>
+
+<li>40 reusable totes</li>
+
+<li>2 tote dollies</li>
+
+<li>Free delivery</li>
+
+<li>Free pickup</li>
+
+<li>Clean and ready to use</li>
+
+<li>Extensions available</li>
+
+</ul>
+
+<br>
+
+<a class="button" href="#">Book Now</a>
+
+</div>
+
+<div class="card">
+
+<h3>Family Move</h3>
+
+<p>4+ Bedrooms</p>
+
+<h2>$219</h2>
+
+<ul>
+
+<li>60 reusable totes</li>
+
+<li>3 tote dollies</li>
+
+<li>Free delivery</li>
+
+<li>Free pickup</li>
+
+<li>Clean and ready to use</li>
+
+<li>Extensions available</li>
+
+</ul>
+
+<br>
+
+<a class="button" href="#">Book Now</a>
+
+</div>
+
+</div>
 
 </section>
 
 <section>
 
-<h2>About Cornerstone</h2>
+<div class="section-title">
+
+<h2>Ready to Make Your Move Easier?</h2>
 
 <p>
 
-Cornerstone Tote Rental is a locally owned family business serving Westchester County. We believe in providing dependable service, treating customers with integrity, and making every move a little easier.
+Reserve your reusable moving totes today or contact us with any questions.
 
 </p>
+
+<br>
+
+<a class="button" href="#">Book Now</a>
+
+&nbsp;
+
+<a class="button" href="#">Contact Us</a>
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<div class="section-title">
+
+<h2>Local. Reliable. Built on Service.</h2>
+
+<p>
+
+Cornerstone Tote Rental is a locally owned business serving Westchester County, NY. 
+
+We provide a cleaner, simpler, and more convenient way to move with durable reusable totes delivered right to your door and picked up when you’re finished.
+
+</p>
+
+</div>
 
 </section>
 
 <section id="contact">
 
-<h2>Contact Us</h2>
+<div class="section-title">
+
+<h2>Contact Cornerstone Tote Rental</h2>
 
 <p>
 
-Ready to make your move easier? Contact Cornerstone Tote Rental today.
+Ready to make your move easier? Contact us today to reserve your totes.
 
 </p>
+
+<br>
+
+<a class="button" href="#">
+
+Book Now
+
+</a>
+
+</div>
+
+</section>
+
+<footer style="
+
+background:#111;
+
+color:white;
+
+padding:40px 7%;
+
+text-align:center;
+
+">
+
+<h3>Cornerstone Tote Rental</h3>
 
 <p>
 
-Email: coming soon
+Reusable Moving Totes in Westchester County, NY
 
 </p>
-
-</section>
-
-<section>
-
-<h2>Why Choose Cornerstone Tote Rental?</h2>
-
-<p><strong>Save Time</strong> – We deliver reusable moving totes right to your door and pick them up when you're finished.</p>
-
-<p><strong>Protect Your Belongings</strong> – Our durable totes are stronger and more convenient than cardboard boxes.</p>
-
-<p><strong>Better for the Environment</strong> – Reusable totes help reduce cardboard waste.</p>
-
-<p><strong>Local & Reliable</strong> – Proudly serving Westchester County with dependable, friendly service.</p>
-
-</section>
-
-<footer>
 
 <p>
 
@@ -285,3 +585,66 @@ Email: coming soon
 </p>
 
 </footer>
+
+<style>
+
+ul {
+
+  list-style: none;
+
+  padding: 0;
+
+}
+
+.card ul li {
+
+  margin: 8px 0;
+
+}
+
+@media(max-width:768px){
+
+header {
+
+  flex-direction: column;
+
+  gap:15px;
+
+}
+
+nav {
+
+  flex-wrap:wrap;
+
+  justify-content:center;
+
+}
+
+.hero h1 {
+
+  font-size:40px;
+
+}
+
+.hero p {
+
+  font-size:17px;
+
+}
+
+.cards {
+
+  flex-direction:column;
+
+}
+
+}
+
+</style>
+
+</body>
+
+</html>
+
+
+
