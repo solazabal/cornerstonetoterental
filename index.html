@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -14,125 +13,135 @@
 
 :root {
 
-  --black: #111111;
+  --black:#111111;
 
-  --cream: #f6f3ed;
+  --cream:#f6f3ed;
 
-  --white: #ffffff;
+  --white:#ffffff;
 
-  --gray: #777777;
+  --gray:#777777;
 
 }
 
 * {
 
-  margin: 0;
+  margin:0;
 
-  padding: 0;
+  padding:0;
 
-  box-sizing: border-box;
+  box-sizing:border-box;
 
 }
 
 html {
 
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
 
 }
 
 body {
 
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family:"Helvetica Neue", Arial, sans-serif;
 
-  color: #222;
+  color:#222;
 
-  background: var(--cream);
+  background:var(--cream);
+
+  line-height:1.6;
 
 }
 
 header {
 
-  position: sticky;
+  position:sticky;
 
-  top: 0;
+  top:0;
 
-  z-index: 100;
+  z-index:100;
 
-  background: var(--black);
+  background:var(--black);
 
-  color: white;
+  color:white;
 
-  padding: 22px 7%;
+  padding:22px 7%;
 
-  display: flex;
+  display:flex;
 
-  justify-content: space-between;
+  justify-content:space-between;
 
-  align-items: center;
+  align-items:center;
 
 }
 
 .logo {
 
-  font-size: 30px;
+  font-size:30px;
 
-  font-weight: 700;
+  font-weight:700;
 
-  letter-spacing: 1px;
+  letter-spacing:1px;
 
 }
 
 .logo span {
 
-  display: block;
+  display:block;
 
-  font-size: 12px;
+  font-size:12px;
 
-  font-weight: 400;
+  font-weight:400;
 
-  letter-spacing: 3px;
-
-  margin-top: 4px;
+  letter-spacing:3px;
 
 }
 
 nav {
 
-  display: flex;
+  display:flex;
 
-  align-items: center;
+  align-items:center;
 
-  gap: 28px;
+  gap:28px;
 
 }
 
 nav a {
 
-  color: white;
+  color:white;
 
-  text-decoration: none;
+  text-decoration:none;
 
-  font-size: 15px;
+  font-size:15px;
 
 }
 
 .button {
 
-  background: white;
+  display:inline-block;
 
-  color: black;
+  background:white;
 
-  padding: 13px 28px;
+  color:black;
 
-  text-decoration: none;
+  padding:13px 28px;
 
-  font-weight: 600;
+  text-decoration:none;
+
+  font-weight:700;
+
+  border-radius:2px;
 
 }
 
 .hero {
 
-  min-height: 90vh;
+  min-height:90vh;
+
+  /*
+
+  Replace YOUR_IMAGE_URL_HERE with your Cornerstone image after uploading it
+
+  */
 
   background:
 
@@ -144,7 +153,7 @@ nav a {
 
   ),
 
-  url("https://images.unsplash.com/photo-1558618666-fcd25c85cd64")
+  url("YOUR_IMAGE_URL_HERE")
 
   center/cover;
 
@@ -166,87 +175,91 @@ nav a {
 
 .hero h1 {
 
-font-size:clamp(45px,6vw,75px);
+  font-size:clamp(45px,6vw,75px);
 
-line-height:1.05;
+  line-height:1.05;
 
-font-weight:700;
-
-margin-bottom:25px;
+  margin-bottom:25px;
 
 }
 
 .hero p {
 
-font-size:22px;
+  font-size:22px;
 
-max-width:600px;
+  max-width:600px;
 
-margin-bottom:35px;
-
-}
-
-.hero .button {
-
-background:white;
-
-color:black;
+  margin-bottom:35px;
 
 }
 
 .section {
 
-padding:100px 7%;
+  padding:100px 7%;
 
 }
 
 .center {
 
-text-align:center;
+  text-align:center;
 
 }
 
 .section h2 {
 
-font-size:45px;
+  font-size:45px;
 
-margin-bottom:20px;
+  margin-bottom:20px;
 
 }
 
-.section p {
+.section > p {
 
-font-size:18px;
+  font-size:18px;
+
+  max-width:700px;
+
+  margin:auto;
 
 }
 
 .cards {
 
-display:grid;
+  display:grid;
 
-grid-template-columns:repeat(3,1fr);
+  grid-template-columns:repeat(3,1fr);
 
-gap:35px;
+  gap:35px;
 
-margin-top:50px;
+  margin-top:50px;
 
 }
 
 .card {
 
-background:white;
+  background:white;
 
-padding:40px;
+  padding:40px;
 
-text-align:center;
+  box-shadow:0 5px 20px rgba(0,0,0,.05);
 
 }
 
 .card h3 {
 
-font-size:24px;
+  font-size:24px;
 
-margin-bottom:15px;
+  margin-bottom:15px;
+
+}
+
+.price {
+
+  font-size:40px;
+
+  font-weight:700;
+
+  margin:15px 0;
 
 }
 
@@ -276,7 +289,7 @@ Cornerstone
 
 <a href="#contact">Contact</a>
 
-<a class="button" href="#">Book Now</a>
+<a class="button" href="#booking">Book Now</a>
 
 </nav>
 
@@ -302,7 +315,7 @@ Serving Westchester County, NY.
 
 </p>
 
-<a class="button" href="#">
+<a class="button" href="#booking">
 
 Book Now
 
@@ -318,7 +331,7 @@ Book Now
 
 <p>
 
-A simple, convenient way to move without the hassle of cardboard boxes.
+Moving made simple from delivery to pickup.
 
 </p>
 
@@ -326,11 +339,11 @@ A simple, convenient way to move without the hassle of cardboard boxes.
 
 <div class="card">
 
-<h3>Choose Your Totes</h3>
+<h3>1. We Deliver</h3>
 
 <p>
 
-Select the rental package that fits your move.
+Clean, sanitized reusable totes are delivered directly to your home on your scheduled date.
 
 </p>
 
@@ -338,11 +351,11 @@ Select the rental package that fits your move.
 
 <div class="card">
 
-<h3>We Deliver</h3>
+<h3>2. You Pack</h3>
 
 <p>
 
-Your clean reusable totes are delivered right to your door.
+No tape. No assembling boxes. Just pack your belongings and get ready for moving day.
 
 </p>
 
@@ -350,11 +363,23 @@ Your clean reusable totes are delivered right to your door.
 
 <div class="card">
 
-<h3>We Pick Them Up</h3>
+<h3>3. You Move</h3>
 
 <p>
 
-When your move is complete, we come back and pick them up.
+Strong, stackable totes help keep your belongings organized and protected.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>4. We Pick Up</h3>
+
+<p>
+
+After your move, we return and collect the empty totes.
 
 </p>
 
@@ -370,7 +395,7 @@ When your move is complete, we come back and pick them up.
 
 <p>
 
-A cleaner, smarter, and more sustainable way to move.
+A cleaner, smarter, and more convenient way to move.
 
 </p>
 
@@ -378,11 +403,23 @@ A cleaner, smarter, and more sustainable way to move.
 
 <div class="card">
 
-<h3>Strong & Reusable</h3>
+<h3>No Tape Required</h3>
 
 <p>
 
-Durable totes designed to handle your belongings and stack easily.
+Skip the hassle of buying, assembling, and throwing away cardboard boxes.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Strong & Stackable</h3>
+
+<p>
+
+Durable reusable totes designed to handle your household belongings.
 
 </p>
 
@@ -394,19 +431,7 @@ Durable totes designed to handle your belongings and stack easily.
 
 <p>
 
-No trips to the store. No assembling boxes. We bring everything you need.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Cleaner Than Cardboard</h3>
-
-<p>
-
-Skip the tape, mess, and waste of traditional moving boxes.
+We bring the totes to you and pick them up when your move is complete.
 
 </p>
 
@@ -432,7 +457,7 @@ Every rental includes delivery, pickup, and clean reusable totes.
 
 <h3>Starter</h3>
 
-<h2>$99</h2>
+<div class="price">$99</div>
 
 <p>
 
@@ -462,7 +487,7 @@ Extensions available
 
 <br>
 
-<a class="button" href="#">
+<a class="button" href="#booking">
 
 Book Now
 
@@ -474,7 +499,7 @@ Book Now
 
 <h3>Standard</h3>
 
-<h2>$169</h2>
+<div class="price">$169</div>
 
 <p>
 
@@ -504,7 +529,7 @@ Extensions available
 
 <br>
 
-<a class="button" href="#">
+<a class="button" href="#booking">
 
 Book Now
 
@@ -516,7 +541,7 @@ Book Now
 
 <h3>Family Move</h3>
 
-<h2>$219</h2>
+<div class="price">$219</div>
 
 <p>
 
@@ -546,7 +571,7 @@ Extensions available
 
 <br>
 
-<a class="button" href="#">
+<a class="button" href="#booking">
 
 Book Now
 
@@ -560,21 +585,23 @@ Book Now
 
 
 
-<section class="section center">
+<section id="booking" class="section center">
 
-<h2>Ready For A Simpler Move?</h2>
+<h2>Ready To Book Your Move?</h2>
 
 <p>
 
-Reserve your reusable moving totes today and experience a cleaner way to move.
+Reserve your reusable moving totes today. Online booking and payment will be available here.
 
 </p>
 
 <br>
 
+<!-- Your Stripe Payment Link will go here -->
+
 <a class="button" href="#">
 
-Book Now
+Book Your Rental
 
 </a>
 
@@ -590,9 +617,9 @@ Local. Reliable. Built On Service.
 
 <p>
 
-Cornerstone Tote Rental proudly serves Westchester County, NY. 
+Cornerstone Tote Rental proudly serves Westchester County, NY.
 
-Our goal is to make moving easier by providing durable reusable totes delivered directly to you and picked up when your move is complete.
+Our mission is to make moving easier by providing durable reusable totes delivered directly to you and picked up when your move is complete.
 
 </p>
 
@@ -614,9 +641,9 @@ Ready to make your move easier?
 
 <br>
 
-<a class="button" href="#">
+<a class="button" href="mailto:Cornerstonetoterental@gmail.com">
 
-Contact Us
+Email Us
 
 </a>
 
@@ -694,6 +721,12 @@ font-size:18px;
 
 }
 
+.section h2{
+
+font-size:36px;
+
+}
+
 }
 
 </style>
@@ -701,3 +734,6 @@ font-size:18px;
 </body>
 
 </html>
+
+
+
