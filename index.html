@@ -1,714 +1,921 @@
 <!DOCTYPE html>
+2
 <html lang="en">
-
+3
 <head>
-
+4
 <meta charset="UTF-8">
-
+5
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+6
+ 
+7
 <title>Cornerstone Tote Rental | Reusable Moving Totes in Westchester County NY</title>
-
+8
+ 
+9
 <style>
-
-:root {
-
-  --black:#111111;
-
-  --cream:#f6f3ed;
-
-  --white:#ffffff;
-
-  --gray:#777777;
-
+10
+ 
+11
+:root{
+12
+--black:#111111;
+13
+--cream:#f6f3ed;
+14
+--white:#ffffff;
+15
+--gold:#c8a96a;
+16
 }
-
-* {
-
-  margin:0;
-
-  padding:0;
-
-  box-sizing:border-box;
-
+17
+ 
+18
+*{
+19
+margin:0;
+20
+padding:0;
+21
+box-sizing:border-box;
+22
 }
-
-html {
-
-  scroll-behavior:smooth;
-
+23
+ 
+24
+html{
+25
+scroll-behavior:smooth;
+26
 }
-
-body {
-
-  font-family:"Helvetica Neue", Arial, sans-serif;
-
-  color:#222;
-
-  background:var(--cream);
-
-  line-height:1.6;
-
+27
+ 
+28
+body{
+29
+font-family:"Helvetica Neue", Arial, sans-serif;
+30
+background:var(--cream);
+31
+color:#222;
+32
+line-height:1.6;
+33
 }
-
-header {
-
-  position:static;
-
-  top:0;
-
-  z-index:100;
-
-  background:var(--black);
-
-  color:white;
-
-  padding:22px 7%;
-
-  display:flex;
-
-  justify-content:space-between;
-
-  align-items:center;
-
-}
-
-.logo {
-
-  font-size:30px;
-
-  font-weight:700;
-
-  letter-spacing:1px;
-
-}
-
-.logo span {
-
-  display:block;
-
-  font-size:12px;
-
-  font-weight:400;
-
-  letter-spacing:3px;
-
-}
-
-nav {
-
-  display:flex;
-
-  align-items:center;
-
-  gap:28px;
-
-}
-
-nav a {
-
-  color:white;
-
-  text-decoration:none;
-
-  font-size:15px;
-
-}
-
-.button {
-
-  display:inline-block;
-
-  background:white;
-
-  color:black;
-
-  padding:13px 28px;
-
-  text-decoration:none;
-
-  font-weight:700;
-
-  border-radius:2px;
-
-}
-
-.hero {
-
-  min-height:90vh;
-
-  /*
-
-  Replace YOUR_IMAGE_URL_HERE with your Cornerstone image after uploading it
-
-  */
-
-  background:
-
-  linear-gradient(
-
-  rgba(0,0,0,.45),
-
-  rgba(0,0,0,.45)
-
-  ),
-
-  url("IMG_9921.jpg")
-
-  center/cover;
-
-  display:flex;
-
-  align-items:center;
-
-  padding:7%;
-
-  color:white;
-
-}
-
-.hero-content {
-
-  max-width:700px;
-
-}
-
-.hero h1 {
-
-  font-size:clamp(45px,6vw,75px);
-
-  line-height:1.05;
-
-  margin-bottom:25px;
-
-}
-
-.hero p {
-
-  font-size:22px;
-
-  max-width:600px;
-
-  margin-bottom:35px;
-
-}
-
-.section {
-
-  padding:100px 7%;
-
-}
-
-.center {
-
-  text-align:center;
-
-}
-
-.section h2 {
-
-  font-size:45px;
-
-  margin-bottom:20px;
-
-}
-
-.section > p {
-
-  font-size:18px;
-
-  max-width:700px;
-
-  margin:auto;
-
-}
-
-.cards {
-
-  display:grid;
-
-  grid-template-columns:repeat(3,1fr);
-
-  gap:35px;
-
-  margin-top:50px;
-
-}
-
-.card {
-
-  background:white;
-
-  padding:40px;
-
-  box-shadow:0 5px 20px rgba(0,0,0,.05);
-
-}
-
-.card h3 {
-
-  font-size:24px;
-
-  margin-bottom:15px;
-
-}
-
-.price {
-
-  font-size:40px;
-
-  font-weight:700;
-
-  margin:15px 0;
-
-}
-
-</style>
-
-</head>
-
-<body>
-
-<header>
-
-<div class="logo">
-
-Cornerstone
-
-<span>TOTE RENTAL</span>
-
-</div>
-
-<nav>
-
-<a href="#how">How It Works</a>
-
-<a href="#why">Why Choose Us</a>
-
-<a href="#pricing">Pricing</a>
-
-<a href="#contact">Contact</a>
-
-<a class="button" href="https://www.jotform.com/262107449994064" target="_blank">Book Now</a>
-
-</nav>
-
-</header>
-
-<section class="hero">
-
-<div class="hero-content">
-
-<h1>
-
-Move Smarter.<br>
-
-Not Harder.
-
-</h1>
-
-<p>
-
-Reusable moving totes delivered to your door and picked up when you're finished.
-
-Serving Westchester County, NY.
-
-</p>
-
-<a class="button" href="https://www.jotform.com/262107449994064" target="_blank">
-
-Book Now
-
-</a>
-
-</div>
-
-</section>
-
-<section id="how" class="section center">
-
-<h2>How It Works</h2>
-
-<p>
-
-Moving made simple from delivery to pickup.
-
-</p>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>1. We Deliver</h3>
-
-<p>
-
-Clean, sanitized reusable totes are delivered directly to your home on your scheduled date.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>2. You Pack</h3>
-
-<p>
-
-No tape. No assembling boxes. Just pack your belongings and get ready for moving day.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>3. You Move</h3>
-
-<p>
-
-Strong, stackable totes help keep your belongings organized and protected.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>4. We Pick Up</h3>
-
-<p>
-
-After your move, we return and collect the empty totes.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="why" class="section center">
-
-<h2>Why Choose Cornerstone?</h2>
-
-<p>
-
-A cleaner, smarter, and more convenient way to move.
-
-</p>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>No Tape Required</h3>
-
-<p>
-
-Skip the hassle of buying, assembling, and throwing away cardboard boxes.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Strong & Stackable</h3>
-
-<p>
-
-Durable reusable totes designed to handle your household belongings.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Delivered To You</h3>
-
-<p>
-
-We bring the totes to you and pick them up when your move is complete.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="pricing" class="section center">
-
-<h2>Choose Your Moving Package</h2>
-
-<p>
-
-Every rental includes delivery, pickup, and clean reusable totes.
-
-</p>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>Starter</h3>
-
-<div class="price">$99</div>
-
-<p>
-
-Studio / 1 Bedroom
-
-<br><br>
-
-20, 27 gallon heavy-duty totes
-
-<br>
-
-1 Tote dolly
-
-<br>
-
-14-day rental
-
-<br>
-
-Free delivery & pickup
-
-<br>
-
-Extensions available
-
-</p>
-
-<br>
-
-<a class="button" href="https://www.jotform.com/262107449994064" target="_blank">
-
-Book Now
-
-</a>
-
-</div>
-
-<div class="card">
-
-<h3>Standard</h3>
-
-<div class="price">$169</div>
-
-<p>
-
-2–3 Bedrooms
-
-<br><br>
-
-40, 27 gallon heavy-duty totes
-
-<br>
-
-2 Tote dollies
-
-<br>
-
-14-day rental
-
-<br>
-
-Free delivery & pickup
-
-<br>
-
-Extensions available
-
-</p>
-
-<br>
-
-<a class="button" href="https://www.jotform.com/262107449994064" target="_blank">
-
-Book Now
-
-</a>
-
-</div>
-
-<div class="card">
-
-<h3>Family Move</h3>
-
-<div class="price">$219</div>
-
-<p>
-
-4+ Bedrooms
-
-<br><br>
-
-60, 27 gallon heavy-duty totes 
-
-<br>
-
-2 Tote dollies
-
-<br>
-
-14-day rental
-
-<br>
-
-Free delivery & pickup
-
-<br>
-
-Extensions available
-
-</p>
-
-<br>
-
-<a class="button" href="https://www.jotform.com/262107449994064" target="_blank">
-
-Book Now
-
-</a>
-
-</div>
-
-</div>
-
-</section>
-  
-<section class="section center" style="background:#111;color:white;">
-
-<h2>
-
-Local. Reliable. Built On Service.
-
-</h2>
-
-<p>
-
-Cornerstone Tote Rental proudly serves Westchester County, NY.
-
-Our mission is to make moving easier by providing durable reusable totes delivered directly to you and picked up when your move is complete.
-
-</p>
-
-</section>
-
-<section id="contact" class="section center">
-
-<h2>
-
-Contact Cornerstone Tote Rental
-
-</h2>
-
-<p>
-
-Ready to make your move easier?
-
-</p>
-
-<br>
-
-<a class="button" href="mailto:Cornerstonetoterental@gmail.com">
-
-Email Us
-
-</a>
-
-</section>
-
-<footer style="
-
-background:#111;
-
-color:white;
-
-text-align:center;
-
-padding:45px 7%;
-
-">
-
-<h3>
-
-Cornerstone Tote Rental
-
-</h3>
-
-<p>
-
-Reusable Moving Totes in Westchester County, NY
-
-</p>
-
-<br>
-
-<p>
-
-© 2026 Cornerstone Tote Rental. All Rights Reserved.
-
-</p>
-
-</footer>
-
-<style>
-
-@media(max-width:900px){
-
+34
+ 
+35
 header{
-
-flex-direction:column;
-
-gap:20px;
-
+36
+background:var(--black);
+37
+color:white;
+38
+padding:22px 7%;
+39
+display:flex;
+40
+justify-content:space-between;
+41
+align-items:center;
+42
 }
-
+43
+ 
+44
+.logo{
+45
+font-size:30px;
+46
+font-weight:700;
+47
+}
+48
+ 
+49
+.logo span{
+50
+display:block;
+51
+font-size:12px;
+52
+letter-spacing:3px;
+53
+font-weight:400;
+54
+}
+55
+ 
+56
 nav{
-
-flex-wrap:wrap;
-
-justify-content:center;
-
+57
+display:flex;
+58
+gap:25px;
+59
+align-items:center;
+60
 }
-
-.cards{
-
-grid-template-columns:1fr;
-
+61
+ 
+62
+nav a{
+63
+color:white;
+64
+text-decoration:none;
+65
 }
-
+66
+ 
+67
+.button{
+68
+display:inline-block;
+69
+background:white;
+70
+color:black;
+71
+padding:14px 28px;
+72
+text-decoration:none;
+73
+font-weight:700;
+74
+border-radius:3px;
+75
+}
+76
+ 
+77
 .hero{
-
-min-height:75vh;
-
+78
+min-height:90vh;
+79
+background:
+80
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+81
+url("IMG_9921.jpg") center/cover;
+82
+display:flex;
+83
+align-items:center;
+84
+color:white;
+85
+padding:7%;
+86
 }
-
+87
+ 
+88
+.hero-content{
+89
+max-width:700px;
+90
+}
+91
+ 
+92
+.hero h1{
+93
+font-size:clamp(48px,6vw,78px);
+94
+line-height:1.05;
+95
+margin-bottom:25px;
+96
+}
+97
+ 
+98
 .hero p{
-
-font-size:18px;
-
+99
+font-size:22px;
+100
+margin-bottom:35px;
+101
+max-width:650px;
+102
 }
-
+103
+ 
+104
+.section{
+105
+padding:90px 7%;
+106
+}
+107
+ 
+108
+.center{
+109
+text-align:center;
+110
+}
+111
+ 
+112
 .section h2{
-
-font-size:36px;
-
+113
+font-size:42px;
+114
+margin-bottom:20px;
+115
 }
-
+116
+ 
+117
+.cards{
+118
+display:grid;
+119
+grid-template-columns:repeat(3,1fr);
+120
+gap:35px;
+121
+margin-top:50px;
+122
 }
-
+123
+ 
+124
+.card{
+125
+background:white;
+126
+padding:40px;
+127
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+128
+}
+129
+ 
+130
+.card h3{
+131
+margin-bottom:15px;
+132
+font-size:24px;
+133
+}
+134
+ 
+135
+.price{
+136
+font-size:42px;
+137
+font-weight:700;
+138
+margin:15px 0;
+139
+}
+140
+ 
+141
+.highlight{
+142
+background:var(--black);
+143
+color:white;
+144
+}
+145
+ 
+146
+.highlight h2{
+147
+color:white;
+148
+}
+149
+ 
+150
+.contact p,
+151
+.about p,
+152
+.highlight p{
+153
+max-width:900px;
+154
+margin:15px auto;
+155
+}
+156
+ 
+157
+.faq{
+158
+display:grid;
+159
+grid-template-columns:repeat(2,1fr);
+160
+gap:25px;
+161
+margin-top:40px;
+162
+}
+163
+ 
+164
+.faq .card{
+165
+text-align:left;
+166
+}
+167
+ 
+168
+footer{
+169
+background:#111;
+170
+color:white;
+171
+text-align:center;
+172
+padding:50px 7%;
+173
+}
+174
+ 
+175
+footer p{
+176
+margin-top:10px;
+177
+}
+178
+ 
+179
+@media(max-width:900px){
+180
+ 
+181
+header{
+182
+flex-direction:column;
+183
+gap:20px;
+184
+}
+185
+ 
+186
+nav{
+187
+flex-wrap:wrap;
+188
+justify-content:center;
+189
+}
+190
+ 
+191
+.cards{
+192
+grid-template-columns:1fr;
+193
+}
+194
+ 
+195
+.faq{
+196
+grid-template-columns:1fr;
+197
+}
+198
+ 
+199
+.hero{
+200
+min-height:75vh;
+201
+}
+202
+ 
+203
+.hero p{
+204
+font-size:18px;
+205
+}
+206
+ 
+207
+.section h2{
+208
+font-size:34px;
+209
+}
+210
+ 
+211
+}
+212
+ 
+213
 </style>
-
+214
+</head>
+215
+ 
+216
+<body>
+217
+ 
+218
+<header>
+219
+ 
+220
+<div class="logo">
+221
+Cornerstone
+222
+<span>TOTE RENTAL</span>
+223
+</div>
+224
+ 
+225
+<nav>
+226
+">How It Works</a>
+227
+">Pricing</a>
+228
+#aboutAbout</a>
+229
+#faq
+230
+">Contact</a>
+231
+ 
+232
+.jotform.com/262107449994064"
+233
+target="_blank">
+234
+Book Now
+235
+</a>
+236
+ 
+237
+</nav>
+238
+ 
+239
+</header>
+240
+ 
+241
+<section class="hero">
+242
+ 
+243
+<div class="hero-content">
+244
+ 
+245
+<h1>
+246
+Move Smarter.<br>
+247
+Not Harder.
+248
+</h1>
+249
+ 
+250
+<p>
+251
+Reusable moving totes delivered directly to your door and picked up when you're finished. Proudly serving Westchester County, New York.
+252
+</p>
+253
+ 
+254
+https://www.jotform.com/262107449994064"
+255
+target="_blank">
+256
+Book Now
+257
+</a>
+258
+ 
+259
+</div>
+260
+ 
+261
+</section>
+262
+ 
+263
+<section id="how" class="section center">
+264
+ 
+265
+<h2>How It Works</h2>
+266
+ 
+267
+<p>Moving made simple from delivery to pickup.</p>
+268
+ 
+269
+<div class="cards">
+270
+ 
+271
+<div class="card">
+272
+<h3>1. We Deliver</h3>
+273
+<p>Clean, sanitized reusable totes delivered directly to your home.</p>
+274
+</div>
+275
+ 
+276
+<div class="card">
+277
+<h3>2. You Pack</h3>
+278
+<p>No tape. No assembling boxes. Just pack and get ready to move.</p>
+279
+</div>
+280
+ 
+281
+<div class="card">
+282
+<h3>3. You Move</h3>
+283
+<p>Strong stackable totes help keep everything protected and organized.</p>
+284
+</div>
+285
+ 
+286
+<div class="card">
+287
+<h3>4. We Pick Up</h3>
+288
+<p>When you're finished, we come back and collect the empty totes.</p>
+289
+</div>
+290
+ 
+291
+</div>
+292
+ 
+293
+</section>
+294
+ 
+295
+<section id="pricing" class="section center">
+296
+ 
+297
+<h2>Choose Your Moving Package</h2>
+298
+ 
+299
+<p>Every rental includes delivery, pickup, and a 14-day rental period.</p>
+300
+ 
+301
+<div class="cards">
+302
+ 
+303
+<div class="card">
+304
+<h3>Starter</h3>
+305
+<div class="price">$99</div>
+306
+<p>
+307
+Studio / 1 Bedroom<br><br>
+308
+20 Heavy Duty Totes<br>
+309
+1 Tote Dolly<br>
+310
+14-Day Rental<br>
+311
+Free Delivery & Pickup
+312
+</p>
+313
+<br>
+314
+<a class="button" href="https://www.jotform.com/262107449994064" target="_blank">Book Now</a>
+315
+</div>
+316
+ 
+317
+<div class="card">
+318
+<h3>Standard</h3>
+319
+<div class="price">$169</div>
+320
+<p>
+321
+2-3 Bedrooms<br><br>
+322
+40 Heavy Duty Totes<br>
+323
+2 Tote Dollies<br>
+324
+14-Day Rental<br>
+325
+Free Delivery & Pickup
+326
+</p>
+327
+<br>
+328
+<a class="button" href="https://www.jotform.com/262107449994064" target="_blank">Book Now</a>
+329
+</div>
+330
+ 
+331
+<div class="card">
+332
+<h3>Family Move</h3>
+333
+<div class="price">$219</div>
+334
+<p>
+335
+4+ Bedrooms<br><br>
+336
+60 Heavy Duty Totes<br>
+337
+2 Tote Dollies<br>
+338
+14-Day Rental<br>
+339
+Free Delivery & Pickup
+340
+</p>
+341
+<br>
+342
+://www.jotform.com/262107449994064" target="_blank">Book Now</a>
+343
+</div>
+344
+ 
+345
+</div>
+346
+ 
+347
+<br><br>
+348
+ 
+349
+<h3>Need More Time?</h3>
+350
+ 
+351
+<p>
+352
+Add an additional rental week to any package for just <strong>$49</strong>.
+353
+</p>
+354
+ 
+355
+</section>
+356
+ 
+357
+<section id="about" class="section center about">
+358
+ 
+359
+<h2>Built On Service. Guided By Values.</h2>
+360
+ 
+361
+<p>
+362
+Cornerstone Tote Rental is a locally owned Westchester County business founded on the principles of integrity, reliability, and service.
+363
+</p>
+364
+ 
+365
+<p>
+366
+Steve started Cornerstone Tote Rental to provide a cleaner, easier, and more convenient alternative to traditional cardboard boxes.
+367
+</p>
+368
+ 
+369
+<p>
+370
+The name "Cornerstone" reflects the belief that strong foundations matter. We strive to serve every customer with honesty, respect, and genuine care throughout the moving process.
+371
+</p>
+372
+ 
+373
+</section>
+374
+ 
+375
+<section class="section center highlight">
+376
+ 
+377
+<h2>Local. Reliable. Built On Service.</h2>
+378
+ 
+379
+<p>
+380
+We proudly serve families, professionals, and businesses throughout Westchester County with reusable moving tote solutions that make moving less stressful and more organized.
+381
+</p>
+382
+ 
+383
+</section>
+384
+ 
+385
+<section id="faq" class="section center">
+386
+ 
+387
+<h2>Frequently Asked Questions</h2>
+388
+ 
+389
+<div class="faq">
+390
+ 
+391
+<div class="card">
+392
+<h3>How long is the rental?</h3>
+393
+<p>All packages include a 14-day rental period.</p>
+394
+</div>
+395
+ 
+396
+<div class="card">
+397
+<h3>Need more time?</h3>
+398
+<p>Add an additional week for only $49.</p>
+399
+</div>
+400
+ 
+401
+<div class="card">
+402
+<h3>Are the totes cleaned?</h3>
+403
+<p>Yes. Every tote is cleaned and sanitized before delivery.</p>
+404
+</div>
+405
+ 
+406
+<div class="card">
+407
+<h3>Do you deliver and pick up?</h3>
+408
+<p>Yes. Delivery and pickup are included with every package.</p>
+409
+</div>
+410
+ 
+411
+</div>
+412
+ 
+413
+</section>
+414
+ 
+415
+<section id="contact" class="section center contact">
+416
+ 
+417
+<h2>Contact Cornerstone Tote Rental</h2>
+418
+ 
+419
+<p>Ready to make your move easier?</p>
+420
+ 
+421
+<p><strong>Steve Solazabal</strong></p>
+422
+ 
+423
+<p>
+424
+Call or Text:
+425
+<strong>(914) 306-5305</strong>
+426
+</p>
+427
+ 
+428
+<p>
+429
+Email:
+430
+<strong>cornerstonetote@gmail.com</strong>
+431
+</p>
+432
+ 
+433
+<br>
+434
+ 
+435
+<a class="button" href="mailto:cornerstonetote@gmail.com">
+436
+Email Us
+437
+</a>
+438
+ 
+439
+</section>
+440
+ 
+441
+<footer>
+442
+ 
+443
+<h3>Cornerstone Tote Rental</h3>
+444
+ 
+445
+<p>Reusable. Reliable. Delivered.</p>
+446
+ 
+447
+<p>Serving Westchester County, NY</p>
+448
+ 
+449
+<p>Call or Text: (914) 306-5305</p>
+450
+ 
+451
+<p>cornerstonetote@gmail.com</p>
+452
+ 
+453
+<br>
+454
+ 
+455
+<p>© 2026 Cornerstone Tote Rental. All Rights Reserved.</p>
+456
+ 
+457
+</footer>
+458
+ 
+459
 </body>
-
+460
 </html>
-
-
+461
+``
