@@ -323,13 +323,53 @@ nav a:hover {
 }
 
 #pricing {
-  padding-top: 80px;
+padding-top: 80px;
 }
-
+  
 #how {
-  padding-bottom: 60px;
+padding-bottom: 60px;
+}
+  
+details.faq-item {
+border-top: 1px solid rgba(255,255,255,.2);
+padding: 20px 0;
+
+}
+details.faq-item:last-child {
+border-bottom: 1px solid rgba(255,255,255,.2);
 }
 
+details.faq-item summary {
+list-style: none;
+cursor: pointer;
+font-size: 24px;
+font-weight: 600;
+color: white;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+details.faq-item summary::-webkit-details-marker {
+display: none;
+}
+
+details.faq-item summary::after {
+content: "+";
+font-size: 32px;
+color: #C9A74B;
+}
+
+details.faq-item[open] summary::after {
+content: "−";
+}
+
+details.faq-item p {
+color: #cccccc;
+margin-top: 15px;
+line-height: 1.6;
+}
+  
 </style>
 
 </head>
